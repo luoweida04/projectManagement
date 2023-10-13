@@ -1,0 +1,32 @@
+<!--pages/budgetTable/budgetTable.wxml-->
+<view class="body">
+<!-- 平面图 -->
+  <view class="blueBox">
+    <view class="titleBox">
+      <image class="blueBlock" src="../../../images/BlueRectangle.png"></image>
+      <text class="titleText">预算报表</text>
+      <view class="uploadBtn" bindtap="goToUpload" data-url="../../designer/uploadFile/uploadFile">上传</view>
+    </view>
+    <view wx:if="{{budget.length == 0}}" class="fileBox">
+      <image class="emptyImg" src="../../../images/Empty.png" />
+      <text class="emptyText">暂无文件 点击上传</text>
+    </view>
+    <view wx:else>
+      <view class="itemBox" wx:for="{{budget}}">
+        <image class="fileImg" src="{{'../../../images/File.png'}}"></image>
+        <text class="fileText">{{item.fileName}}</text>
+        <image class="deleteBtn" src="../../../images/Delete.png" bindtap="deleteFile" data-delArr="budget" data-delIdx="{{index}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<van-popup show="{{ deleteCheck }}" bind:close="onClose" custom-style="border-radius: 15px;">
+<view class="deleteWindow">
+  <image class="warningIcon" src="../../../images/Caution.png"/>
+  <text class="warningText">请问您是否确认删除文件?</text>
+  <view class="btnBox">
+  <view class="windowBtn cancelBtn" bindtap="onClose">取消</view>
+  <view class="windowBtn confirmBtn" bindtap="deleteConfirm">确认</view>
+  </view>
+</view>
+</van-popup>

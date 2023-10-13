@@ -1,0 +1,56 @@
+/* pages/designer/uploadFile/uploadFile.wxss */
+.page {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 3.5vw;
+  background-color: #F3F6F9;
+  padding-bottom: 30vw;
+  padding-left: 5vw;
+  overflow: hidden;
+}
+.label {
+  display: flex;
+  margin-bottom: 3vw;
+  margin-top: 3vw;
+}
+.icon {
+  width: 6px;
+  height: 20px;
+  background-color: #2897FD;
+  margin-right: 10px;
+}
+input {
+  width: 83vw;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 2vw 3vw;
+  margin-top: 2vw;
+}
+.choose{
+  box-sizing: border-box;
+  width: 90vw;
+  height: 40vw;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.choose image {
+  width: 20vw;
+  margin-left: 35vw;
+  margin-top: 10vw;
+}
+.upload {
+  position: fixed;
+  left: 17vw;
+  bottom: 10vw;
+  width: 66vw;
+  height: 15vw;
+  line-height: 15vw;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #2897FD;
+  border-radius: 12px;
+}

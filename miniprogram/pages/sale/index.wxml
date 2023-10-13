@@ -1,0 +1,7 @@
+<!--pages/sale/index.wxml-->
+<view class="page">
+  <workOrder wx:for="{{projects}}" wx:key="index" proj="{{item}}"></workOrder>
+  <view class="box">
+    <view class="createWorkOrder" bindtap="createWorkOrder">立项</view>
+  </view>
+</view>

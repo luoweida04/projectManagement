@@ -1,0 +1,18 @@
+/**app.wxss**/
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} */
+
+@font-face{
+  font-family: 'alipu';
+  src: url("https://636c-cloud1-4gfnhjpdbdddb9e0-1318704896.tcb.qcloud.la/font/Alibaba-PuHuiTi-Medium.ttf?sign=a07996476ee6cfd5a46058d626e080f4&t=1687085817");
+  font-weight: bold;
+}
+@font-face{
+  font-family: 'alipu';
+  src: url("https://636c-cloud1-4gfnhjpdbdddb9e0-1318704896.tcb.qcloud.la/font/Alibaba-PuHuiTi-Regular.ttf?sign=4b6e0b87c38da35b3897b8faa9dd8ee9&t=1687086137");
+  font-weight: normal;
+}

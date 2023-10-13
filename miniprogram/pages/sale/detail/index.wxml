@@ -1,0 +1,38 @@
+<!--pages/sale/preMeasure/index.wxml-->
+<view class="page">
+  <view wx:if="{{titleId=='0'}}">
+    <view class="label">
+      <view class="icon"></view>
+      <view>设计师</view>
+    </view>
+    <view class="select" bindtap="select1" style="color: {{designer==''?'#C5C5C5':'#848484'}};">{{designer==""?"请点击选择设计师":designer}}</view>
+    <view class="label">
+      <view class="icon"></view>
+      <view>预结算员</view>
+    </view>
+    <view class="select" bindtap="select2" style="color: {{preMeasurer==''?'#C5C5C5':'#848484'}};">{{preMeasurer==""?"请点击选择预结算员":preMeasurer}}</view>
+    <view class="overlay" wx:if="{{showPicker1}}">
+      <van-picker class="vanPicker" catchtap="catchTap" columns="{{ columns1 }}" bind:change="onChange" />
+      <view class="bottom"></view>
+    </view>
+    <view class="overlay" wx:if="{{showPicker2}}">
+      <van-picker class="vanPicker" catchtap="catchTap" columns="{{ columns2 }}" bind:change="onChange" />
+      <view class="bottom"></view>
+    </view>
+  </view>
+  <view wx:if="{{titleId=='1'}}">
+    <view class="label">
+      <view class="icon"></view>
+      <view>项目经理</view>
+    </view>
+    <view class="select" bindtap="select3" style="color: {{manager==''?'#C5C5C5':'#848484'}};">{{manager==""?"请点击选择项目经理":manager}}</view>
+    <view class="overlay" wx:if="{{showPicker3}}">
+      <van-picker class="vanPicker" catchtap="catchTap" columns="{{ columns3 }}" bind:change="onChange" />
+      <view class="bottom"></view>
+    </view>
+  </view>
+  <view class="btns">
+    <view class="cancel" bindtap="cancel">取消</view>
+    <view class="affirm" bindtap="affirm">确认</view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/login/login.wxml-->
+<image class="bgImage" src="../../images/Background.png" mode="" />
+<view class="loginBox">
+  <text class="phoneText">手机号</text>
+  <input class="phoneInput" type="text" placeholder="请输入您的手机号"  value="{{phoneNum}}" bindinput="inputPhone"/>
+  <view class="btnBox">
+    <button class="introBtn" bindtap="goToIntro">软件介绍</button>
+    <button class="loginBtn" bindtap="login">登录</button>
+  </view>
+</view>

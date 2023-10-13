@@ -1,0 +1,55 @@
+<!--pages/constructionDetail/constructionDetail.wxml-->
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">工期</view>
+    </view>
+    <view class="textBox med">
+      <view class="infoShow">{{constructTime}}</view>
+    </view>
+    <view class="unit">天</view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">施工人员</view>
+    </view>
+    <view class="textBox large">
+      <view class="infoShow">{{constructorName}}</view>
+    </view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">质检项目</view>
+    </view>
+  <view class="projectContainer" wx:if="{{projectIsEmpty==0}}">
+    <view class="projectLine" wx:for="{{projectName}}">
+      <view class="projectText">{{item}}</view>
+      <view class="projectCheckbox">
+        <image src="/images/Check.png" class="checkImage" wx:if="{{projectIsCheck[index]}}"></image>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{projectIsEmpty!=0}}">
+    <view class="projectLine">
+      <view class="emptyProject">暂无质检项目</view>
+    </view>
+  </view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">现场施工图</view>
+    </view>
+    <view class="imageContainer" wx:if="{{ImageIsEmpty==0}}">
+      <view class="imageButtom" wx:for="{{constructImageDate}}" bindtap="previewPhotos" data-arrayIndex="{{index}}">
+        <text>{{item.data.Date}}</text>
+      </view>
+    </view>
+    <view wx:if="{{ImageIsEmpty!=0}}">
+    <view class="projectLine">
+      <view class="emptyImage">暂无现场施工图</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,83 @@
+/* pages/constructionDetail/constructionDetail.wxss */
+@import "/pages/warrantyInfo/warrantyInfo.wxss";
+
+.emptyProject{
+  text-align: center;
+  position: relative;
+  left: 230rpx;
+  color:#828282;
+}
+
+.emptyImage{
+  height: 50rpx;
+  text-align: center;
+  position: relative;
+  left: 205rpx;
+  color:#828282;
+}
+
+.checkImage{
+  position: relative;
+  left: 4rpx;
+  top: 4rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.imageButtom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2897FD;
+  border:solid #2897FD;
+  border-radius: 12rpx;
+  width: 187.09rpx;
+  height: 64rpx;
+  margin-bottom: 20rpx;
+  margin-right: 16rpx;
+}
+
+.imageContainer{
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
+  width: 660rpx;
+  background-color: white;
+  border-radius: 12rpx;
+  padding-top:22rpx ;
+  padding-bottom: 2rpx;
+  padding-right: 0rpx;
+  padding-left: 24rpx;
+}
+
+.projectCheckbox{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 12rpx;
+  background-color: #F3F6F9;
+  position: relative;
+  left: 16rpx;
+}
+
+.projectContainer{
+  background-color: white;
+  width: 660rpx;
+  border-radius: 12rpx;
+  margin-top: 6rpx;
+}
+
+.projectLine{
+  display: flex;
+  align-items: center;
+  height: 92rpx;
+  width: 622rpx;
+  border-bottom: solid;
+  border-color: #F3F6F9 ;
+  position: relative;
+  left: 24rpx;
+}
+
+.projectText{
+  color:#848484;
+  width: 546rpx;
+}

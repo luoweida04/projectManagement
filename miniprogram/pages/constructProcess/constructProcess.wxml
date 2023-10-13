@@ -1,0 +1,7 @@
+<!--pages/constructProcess/constructProcess.wxml-->
+<view class="outer">
+  <view class="buttonAndText" wx:for="{{buttonText}}"   bindtap="mainDestroy" data-idd="{{index}}" wx:if="{{availableArray[index]}}"> <!--bindtap="{{buttonName[index]}}"-->
+    <image class="buttonImage" src="/images/Process_0{{index+1}}.png"></image>
+    <view class="textUnderImage">{{item}}</view>
+  </view>
+</view>

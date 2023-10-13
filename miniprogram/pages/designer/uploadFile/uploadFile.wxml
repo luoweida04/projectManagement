@@ -1,0 +1,2 @@
+<!--pages/designer/uploadFile/uploadFile.wxml-->
+<web-view src="https://cloud1-4gfnhjpdbdddb9e0-1318704896.tcloudbaseapp.com/build/index.html" bindmessage="chooseFile"/>

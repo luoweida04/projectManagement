@@ -1,0 +1,5 @@
+<!--pages/budgetTable/budgetTable.wxml-->
+<view class="getFileBar" id="firstLine" wx:for="{{budgetArray}}" bindtap="previewTable" data-budgetIndex="{{index}}">
+  <image class="fileImage" src="/images/File.png"></image>
+  <view class="fileText">{{item.fileName}}</view>
+</view>

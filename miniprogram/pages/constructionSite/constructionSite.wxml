@@ -1,0 +1,10 @@
+<!--pages/constructionSite/constructionSite.wxml-->
+<view class="getFileBar" id="firstLine">
+  <image class="fileImage" src="/images/file.png"></image>
+  <view class="fileText">现场图</view>
+</view>
+
+<view class="getFileBar">
+  <image class="fileImage" src="/images/file.png"></image>
+  <view class="fileText">视频</view>
+</view>

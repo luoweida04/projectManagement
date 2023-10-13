@@ -1,0 +1,6 @@
+<view class="outer">
+  <view class="oneButton" bindtap="door" wx:for="{{materialList}}" data-materialIndex="{{index}}">
+    <image class="buttonImage" src="/images/Main_0{{(index+1%4)}}.png"></image>
+    <view class="buttonText">{{item}}</view>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+/* pages/login/login.wxss */
+.bgImage {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loginBox {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 360rpx;
+  transform: translateX(-50%);
+  width: 660rpx;
+  height: 552rpx;
+  padding: 0 80rpx;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24rpx;
+}
+
+.phoneText {
+  margin-top: 118rpx;
+  width: 168rpx;
+  height: 48rpx;
+  font-size: 32rpx;
+  font-family: 'alipu';
+  font-weight: normal;
+  color: #000000;
+  line-height: 50rpx;
+}
+
+.phoneInput {
+  margin-top: 18rpx;
+  margin-bottom: auto;
+  box-sizing: border-box;
+  width: 500rpx;
+  height: 80rpx;
+  background: #F3F6F9;
+  border-radius: 20rpx;
+  padding: 16rpx 28rpx;
+  font-size: 26rpx;
+  font-family: 'alipu';
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.btnBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 78rpx;
+}
+
+.introBtn {
+  width: 202rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #D8D8D8;
+  border-radius: 16rpx;
+  color: white;
+  font-size: 30rpx;
+  font-family: 'alipu';
+  border-style: none;
+}
+
+.loginBtn {
+  width: 270rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 16rpx;
+  border: 2rpx solid #2897FD;
+  font-size: 30rpx;
+  font-family: 'alipu';
+  color: #2897FD;
+
+}

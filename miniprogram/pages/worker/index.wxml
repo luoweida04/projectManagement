@@ -1,0 +1,9 @@
+<!--pages/worker/index.wxml-->
+<view class="page">
+  <view class="boxs">
+    <view class="box" wx:for="{{boxs}}" wx:key="index" bindtap="upLoad" data-i="{{index}}">
+      <image src="{{item.url}}" mode="widthFix" />
+      <view class="name">{{item.name}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/identitySelect/identitySelect",
+    "pages/orderList/orderList",
+    "pages/designer/designer",
+    "pages/designer/designerFile/designerFile",
+    "pages/designer/uploadLink/uploadLink",
+    "pages/designer/uploadVR/uploadVR",
+    "pages/designer/uploadFile/uploadFile",
+    "pages/sale/index",
+    "pages/sale/detail/index",
+    "pages/sale/material/index",
+    "pages/sale/contactAndStop/index",
+    "pages/sale/createOrder/index",
+    "pages/worker/index",
+    "pages/manager/index",
+    "pages/user/selectPanel/selectPanel",
+    "pages/warrantyInfo/warrantyInfo",
+    "pages/intro/intro",
+    "pages/constructProcess/constructProcess",
+    "pages/warrantySelect/warrantySelect",
+    "pages/constructionSite/constructionSite",
+    "pages/budget/budgetTable/budgetTable",
+    "pages/constructionDetail/constructionDetail",
+    "pages/worker/uploadFile/index",
+    "pages/worker/onePro/index",
+    "pages/user/budgetTable/budgetTable",
+    "pages/user/getDocument/getDocument",
+    "pages/user/openWebSite/openWebSite"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,31 @@
+<!--pages/orderList/orderList.wxml-->
+<view class="bg">
+  <view class="item" wx:for="{{orderList}}" bindtap="goToOperate" data-projectid="{{item.projID}}">
+    <view class="headerBox">
+      <text class="headerText">{{item.projID}}</text>
+      <button class="operateBtn">操作</button>
+    </view>
+    <view class="contentBox">
+      <view class="contentItem">
+      <text class="contentTitle">姓名</text>
+      <text class="contentValue">{{item.name}}</text>
+      </view>
+      <view class="contentItem">
+      <text class="contentTitle">联系方式</text>
+      <text class="contentValue">{{item.customer}}</text>
+      </view>
+      <view class="contentItem">
+      <text class="contentTitle">地址</text>
+      <text class="contentValue">{{item.address}}</text>
+      </view>
+      <view class="contentItem">
+      <text class="contentTitle">面积</text>
+      <text class="contentValue">{{item.area}}m²</text>
+      </view>
+      <view class="contentItem">
+      <text class="contentTitle">工单状态</text>
+      <text class="contentValue">{{item.status}}</text>
+      </view>
+    </view>
+  </view>
+</view>

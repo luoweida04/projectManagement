@@ -1,0 +1,17 @@
+/* pages/warrantySelect/warrantySelect.wxss */
+@import "/pages/user/selectPanel/selectPanel.wxss";
+
+.oneButton{
+  margin-bottom: 50rpx;
+  margin-left: 34rpx;
+}
+
+.outer{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 670rpx;
+  top:100rpx;
+  position: relative;
+  left: 40rpx;
+}

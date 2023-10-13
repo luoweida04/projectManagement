@@ -1,0 +1,2 @@
+<!--pages/user/openWebSite/openWebSite.wxml-->
+<web-view src="{{webViewUrl}}"/>

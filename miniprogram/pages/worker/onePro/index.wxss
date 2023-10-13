@@ -1,0 +1,72 @@
+/* pages/worker/onePro/index.wxss */
+.page {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #F3F6F9;
+  padding-top: 5vw;
+}
+.upLoad {
+  margin-top: 3vw;
+  margin-left: 6vw;
+}
+.label {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  margin-bottom: 3vw;
+}
+.label .left {
+  display: flex;
+}
+.label .left .icon {
+  width: 6px;
+  height: 20px;
+  background-color: #2897FD;
+  margin-right: 10px;
+}
+.label .right {
+  width: 15vw;
+  height: 6vw;
+  line-height: 5.5vw;
+  text-align: center;
+  border: 1px solid #2897FD;
+  border-radius: 5px;
+  color: #2897FD;
+}
+.file {
+  box-sizing: border-box;
+  display: flex;
+  width: 88vw;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  line-height: 20vw;
+  margin-bottom: 3vw;
+}
+.file .left {
+  display: flex;
+  justify-content: space-between;
+}
+.file .left image {
+  width: 14vw;
+  margin: 3vw 3vw 0 3vw;
+}
+.file .right {
+  width: 7vw;
+  margin-top: 6.5vw;
+  margin-right: 5vw;
+}
+.vandialog {
+  width: 85vw;
+  padding-bottom: 3vw;
+}
+.vandialog image{
+  width: 20vw;
+  margin: 8vw 30vw 2vw;
+}
+.vandialog .message {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 8vw;
+}

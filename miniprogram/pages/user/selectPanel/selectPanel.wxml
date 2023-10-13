@@ -1,0 +1,47 @@
+<!--pages/user/selectPanel.wxml-->
+<view class="introBar">
+  <image class="blueRect" src="/images/BlueRectangle.png"></image>
+  <view class="introBarText">个人信息</view>
+</view>
+<view class="personalInfoBlock">
+  <view class="personalInfoLine">
+    <view class="rowText">姓名</view>
+    <view class="infoText">{{userName}}</view>
+  </view>
+  <view class="splitLine"></view>
+  <view class="personalInfoLine">
+    <view class="rowText">联系方式</view>
+    <view class="infoText">{{contactNum}}</view>
+  </view>
+  <view class="splitLine"></view>
+  <view class="personalInfoLine">
+    <view class="rowText">地址</view>
+    <view class="infoText">{{address}}</view>
+  </view>
+</view>
+<view class="buttonContainer">
+  <view class="oneButton" bindtap="surfaceImage">
+    <image class="buttonImage" src="/images/Main_01.png"></image>
+    <view class="buttonText">平面图</view>
+  </view>
+  <view class="oneButton" bindtap="effectImage">
+    <image class="buttonImage" src="/images/Main_02.png"></image>
+    <view class="buttonText">效果图</view>
+  </view>
+  <view class="oneButton" bindtap="toConstructionSite">
+    <image class="buttonImage" src="/images/Main_03.png"></image>
+    <view class="buttonText">施工图</view>
+  </view>
+  <view class="oneButton" bindtap="toBudget">
+    <image class="buttonImage" src="/images/Main_04.png"></image>
+    <view class="buttonText">预算</view>
+  </view>
+  <view class="oneButton" bindtap="constructProcess">
+    <image class="buttonImage" src="/images/Main_05.png"></image>
+    <view class="buttonText">施工过程</view>
+  </view>
+  <view class="oneButton"  bindtap="toWarrenty">
+    <image class="buttonImage" src="/images/Main_06.png"></image>
+    <view class="buttonText">质保信息</view>
+  </view>
+</view>

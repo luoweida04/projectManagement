@@ -1,0 +1,160 @@
+/* pages/sale/material/index.wxss */
+.page {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 3.5vw;
+  background-color: #F3F6F9;
+  padding-bottom: 30vw;
+  overflow: hidden;
+}
+.record {
+  position: fixed;
+  left: 17vw;
+  bottom: 10vw;
+  width: 66vw;
+  height: 15vw;
+  line-height: 15vw;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #2897FD;
+  border-radius: 12px;
+}
+.boxs {
+  display: flex;
+  width: 95vw;
+  flex-wrap: wrap;
+}
+.box {
+  width: 26vw;
+  height: 26vw;
+  line-height: 26vw;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 25px;
+  margin: 2.5vw;
+}
+.edit {
+  padding-left: 3vw;
+}
+.label {
+  display: flex;
+}
+.icon {
+  width: 6px;
+  height: 20px;
+  background-color: #2897FD;
+  margin-right: 10px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 3vw;
+}
+input {
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 2vw 3vw;
+  margin-top: 2vw;
+}
+.col .unit {
+  display: flex;
+}
+.selectTime {
+  width: 80vw;
+  font-size: 14px;
+  color: #C5C5C5;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 2vw 3vw;
+  margin-top: 2vw;
+}
+.upload {
+  width: 15vw;
+  height: 6vw;
+  line-height: 5.5vw;
+  text-align: center;
+  border: 1px solid #2897FD;
+  border-radius: 5px;
+  color: #2897FD;
+  margin-right: 2vw;
+}
+.file {
+  box-sizing: border-box;
+  display: flex;
+  width: 88vw;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  line-height: 20vw;
+  margin-bottom: 3vw;
+  margin-top: 2vw;
+}
+.file .left {
+  display: flex;
+  justify-content: space-between;
+}
+.file .left image {
+  width: 14vw;
+  margin: 3vw 3vw 0 3vw;
+}
+.file .right {
+  width: 7vw;
+  margin-top: 6.5vw;
+  margin-right: 5vw;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 100;
+}
+.overlay .bottom {
+  position: absolute;
+  width: 100vw;
+  height: 30vw;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+}
+.datePicker {
+  position: absolute;
+  width: 100vw;
+  bottom: 30vw;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.btns {
+  position: fixed;
+  left: 10vw;
+  bottom: 10vw;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  z-index: 100;
+}
+.btns .cancel {
+  width: 25vw;
+  height: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  background-color: #CACACA;
+  border-radius: 12px;
+}
+.btns .save {
+  width: 50vw;
+  height: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  background-color: #2897FD;
+  border-radius: 12px;
+}

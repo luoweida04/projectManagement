@@ -1,0 +1,73 @@
+/* pages/designer/uploadFile/uploadFile.wxss */
+.body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 48rpx;
+  background: #F3F6F9;
+  min-height: 100vh;
+}
+
+.blueBox {
+  width: 100%;
+  margin-bottom: 18rpx;
+}
+
+.titleBox {
+  display: flex;
+  align-items: center;
+  margin-top: 14rpx;
+  margin-bottom: 6rpx;
+}
+
+.blueBlock {
+  width: 10rpx;
+  height: 30rpx;
+}
+
+.titleText {
+  text-align: center;
+  font-size: 28rpx;
+  padding-left: 14rpx;
+  font-family: 'alipu';
+}
+
+.textInput {
+  margin-top: 2rpx;
+  background: white;
+  padding: 8rpx 24rpx;
+  border-radius: 12rpx;
+  font-size: 28rpx;
+  font-family: 'alipu';
+}
+
+.uploadBox{
+  width: 652rpx;
+  height: 300rpx;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploadImg{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.uploadBtn{
+  width: 522rpx;
+  height: 110rpx;
+  background: #2897FD;
+  color: white;
+  line-height: 110rpx;
+  font-size: 40rpx;
+  border-radius: 24rpx;
+  position: absolute;
+  bottom: 106rpx;
+  left: calc(50% - 261rpx) ;
+  font-family: 'alipu';
+  font-weight: bold;
+}

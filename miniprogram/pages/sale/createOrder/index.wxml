@@ -1,0 +1,38 @@
+<!--pages/sale/createOrder/index.wxml-->
+<view class="page">
+  <view class="label">
+    <view class="icon"></view>
+    <view>姓名</view>
+  </view>
+  <input type="text" placeholder="请输入联系人姓名" bindinput="inputName"/>
+  <view class="label">
+    <view class="icon"></view>
+    <view>联系方式</view>
+  </view>
+  <input type="text" placeholder="请输入联系方式" bindinput="inputContact"/>
+  <view class="label">
+    <view class="icon"></view>
+    <view>地址</view>
+  </view>
+  <input type="text" placeholder="请输入具体地址" bindinput="inputAddress"/>
+  <view class="label">
+    <view class="icon"></view>
+    <view>面积</view>
+  </view>
+  <view class="unit">
+    <input type="number" placeholder="请输入房屋面积" bindinput="inputAera"/>
+     <view class="text">m²</view>
+  </view>
+  <view class="label">
+    <view class="icon"></view>
+    <view>预估房价</view>
+  </view>
+  <view class="unit">
+    <input type="number" placeholder="请输入预估房价" bindinput="inputPrice"/>
+    <view class="text">元</view>
+  </view>
+  <view class="btns">
+    <view class="cancel" bindtap="cancel">取消</view>
+    <view class="affirm" bindtap="affirm">确认</view>
+  </view>
+</view>

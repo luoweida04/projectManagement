@@ -1,0 +1,5 @@
+<!--pages/intro/intro.wxml-->
+<image class="bgImage" src="../../images/Background.png" mode="" />
+<view class="introBox">
+
+</view>

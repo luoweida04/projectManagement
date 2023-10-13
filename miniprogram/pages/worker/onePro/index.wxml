@@ -1,0 +1,25 @@
+<!--pages/worker/onePro/index.wxml-->
+<view class="page">
+  <view class="upLoad">
+    <view class="label">
+      <view class="left">
+        <view class="icon"></view>
+        <view>施工过程图与视频</view>
+      </view>
+      <view class="right" bindtap="gotoUpLoad">上传</view>
+    </view>
+    <view class="files">
+      <view class="file" wx:for="{{pro.files}}" wx:key="index" bindtap="previewImg" data-i="{{index}}">
+        <view class="left">
+          <image src="cloud://cloud1-4gfnhjpdbdddb9e0.636c-cloud1-4gfnhjpdbdddb9e0-1318704896/File@3x.png" mode="widthFix" />
+          <view class="name">{{item.fileName}}</view>
+        </view>
+        <image class="right" src="cloud://cloud1-4gfnhjpdbdddb9e0.636c-cloud1-4gfnhjpdbdddb9e0-1318704896/Delete@3x.png" mode="widthFix" catchtap="delFile" data-i="{{index}}"/>
+      </view>
+    </view>
+    <van-dialog custom-class="vandialog" use-slot show="{{ showDialog }}" show-cancel-button confirm-button-color="#2897FD" cancel-button-color="#A3A3A3" bind:cancel="cancelDel" bind:confirm="confirmDel">
+      <image src="cloud://cloud1-4gfnhjpdbdddb9e0.636c-cloud1-4gfnhjpdbdddb9e0-1318704896/Caution.png" mode="widthFix" />
+      <view class="message">请问您是否确认删除文件?</view>
+    </van-dialog>
+  </view>
+</view>

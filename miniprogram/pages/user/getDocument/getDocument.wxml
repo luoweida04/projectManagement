@@ -1,0 +1,22 @@
+<!--pages/user/getDocument/getDocument.wxml-->
+<block wx:if="{{fileArray.length!=0}}">
+<view class="getFileBar" id="firstLine" wx:for="{{fileArray}}" wx:if="{{mode!='imageAndWeb'}}" bindtap="previewTable" data-fileIndex="{{index}}" >
+  <image class="fileImage" src="/images/File.png"></image>
+  <view class="fileText">{{item.fileName!=undefine?item.fileName:item.name}}</view>
+</view>
+<view class="getFileBar" id="firstLine" wx:for="{{fileArray}}" wx:if="{{mode=='imageAndWeb'}}"bindtap="previewTable" data-fileIndex="{{index}}" >
+  <image class="fileImage" src="/images/File.png"></image>
+  <view class="fileText">{{item.fileName!=undefine?item.fileName:item.name}}</view>
+</view>
+</block>
+<block wx:if="{{fileArray.length==0}}">
+  <view class="emptyDisplay">
+    <image src="/images/Empty.png" class="emptyImage"></image>
+    <view class="emptyText">暂无文件</view>
+  </view>
+</block>
+<!--
+
+
+
+-->

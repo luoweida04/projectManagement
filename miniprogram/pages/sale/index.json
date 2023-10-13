@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "workOrder": "/components/workOrder"
+  },
+  "navigationBarTitleText": "实施工单"
+}

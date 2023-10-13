@@ -1,0 +1,7 @@
+<!--pages/designerFile/designerFile.wxml-->
+<view class="body">
+  <view wx:for="{{items}}" class="itemBox" bindtap="goNextPage" data-url="{{item.url}}">
+    <image class="itemImg" src="{{item.icon}}"/>
+    <text class="itemText">{{item.text}}</text>
+  </view>
+</view>

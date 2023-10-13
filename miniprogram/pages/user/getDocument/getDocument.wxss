@@ -1,0 +1,25 @@
+/* pages/user/getDocument/getDocument.wxss */
+@import "/pages/constructionSite/constructionSite.wxss";
+
+.emptyDisplay{
+  width: 660rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 46rpx;
+  position: relative;
+  left: 50rpx;
+  top:150rpx
+}
+
+.emptyImage{
+  width: 242rpx;
+  height: 176rpx;
+}
+
+.emptyText{
+  color: #828282;
+  font-size: small;
+}

@@ -1,0 +1,31 @@
+/* pages/designerFile/designerFile.wxss */
+.body{
+  background: #F3F6F9;
+  padding: 120rpx 76rpx;
+  display: flex;
+  min-height: 100vh;
+}
+
+.itemBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 210rpx;
+  width: 160rpx;
+  margin-right: 60rpx;
+}
+
+.itemImg{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.itemText{
+  font-size: 28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-family: 'alipu';
+  text-align: center;
+}
+

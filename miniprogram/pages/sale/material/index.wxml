@@ -1,0 +1,111 @@
+<!--pages/sale/material/index.wxml-->
+<view class="page">
+  <view class="boxs" wx:if="{{!showEdit}}">
+    <view class="box" bindtap="edit" data-index="{{index}}" wx:for="{{info}}" wx:key="index" style="background:-webkit-linear-gradient(top,{{colors[index%3][0]}},{{colors[index%3][1]}});">
+      {{item.name}}
+    </view>
+    <view class="record" bindtap="newInfo">录入主材信息</view>
+  </view>
+  <view class="edit" wx:if="{{showEdit}}">
+    <view class="row">
+      <view class="col">
+        <view class="label">
+          <view class="icon"></view>
+          <view>主材名称</view>
+        </view>
+        <input type="text" placeholder="请输入主材名称" value="{{formData.name}}" bindinput="inputName" style="width: 30vw;" placeholder-style="color: #C5C5C5;"/>
+      </view>
+      <view class="col">
+        <view class="label">
+          <view class="icon"></view>
+          <view>主材品牌</view>
+        </view>
+        <input type="text" placeholder="请输入品牌名" value="{{formData.brand}}" bindinput="inputBrand" style="width: 30vw;" placeholder-style="color: #C5C5C5;"/>
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="label">
+          <view class="icon"></view>
+          <view>主材价格</view>
+        </view>
+        <view class="unit">
+          <input type="number" placeholder="请输入主材价格" value="{{formData.price}}" bindinput="inputPrice" style="width: 70vw;" placeholder-style="color: #C5C5C5;"/>
+          <view style="padding-top: 4vw; margin-left: 5vw;">元</view>
+        </view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="label">
+          <view class="icon"></view>
+          <view>质保期</view>
+        </view>
+        <view class="unit">
+          <input type="number" placeholder="请输入质保期时长" value="{{formData.guaTime}}" bindinput="inputQgp" style="width: 70vw;" placeholder-style="color: #C5C5C5;"/>
+          <view style="padding-top: 4vw; margin-left: 5vw;">天</view>
+        </view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="label">
+          <view class="icon"></view>
+          <view>质保开始时间</view>
+        </view>
+        <view class="selectTime" bindtap="selectTime" style="color: {{date==''?'#C5C5C5':'#000'}};">{{date==''?"请选择质保开始时间":date}}</view>
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="label">
+          <view class="icon"></view>
+          <view>供货商</view>
+        </view>
+        <input type="text" placeholder="请输入供货商名" value="{{formData.supplier}}" bindinput="inputSupplier" style="width: 80vw;" placeholder-style="color: #C5C5C5;"/>
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="label">
+          <view class="icon"></view>
+          <view>联系人</view>
+        </view>
+        <input type="text" placeholder="请输入联系人名" value="{{formData.clientName}}" bindinput="inputContacts" style="width: 80vw;" placeholder-style="color: #C5C5C5;"/>
+      </view>
+    </view>
+    <view class="row">
+      <view class="col">
+        <view class="label">
+          <view class="icon"></view>
+          <view>联系方式</view>
+        </view>
+        <input type="number" placeholder="请输入联系方式" value="{{formData.phone}}" bindinput="inputContactWay" style="width: 80vw;" placeholder-style="color: #C5C5C5;"/>
+      </view>
+    </view>
+    <view class="row">
+      <view class="label">
+        <view class="icon"></view>
+        <view>文件资料</view>
+      </view>
+      <view class="upload" bindtap="upLoad">上传</view>
+    </view>
+    <view class="files">
+      <view class="file" wx:for="{{formData.files}}" wx:key="index" bindtap="downloadFile"  data-i="{{index}}">
+        <view class="left">
+          <image src="cloud://cloud1-4gfnhjpdbdddb9e0.636c-cloud1-4gfnhjpdbdddb9e0-1318704896/File@3x.png" mode="widthFix" />
+          <view class="name">{{item.name}}</view>
+        </view>
+        <image class="right" src="cloud://cloud1-4gfnhjpdbdddb9e0.636c-cloud1-4gfnhjpdbdddb9e0-1318704896/Delete@3x.png" mode="widthFix" catchtap="delFile" data-i="{{index}}"/>
+      </view>
+    </view>
+    <view class="overlay" wx:if="{{showDatePicker}}">
+      <van-datetime-picker class="datePicker" type="date" bind:input="onInputDatePicker" bind:confirm="comfirmDate" bind:cancel="cancelDate"/>
+      <view class="bottom"></view>
+    </view>
+    <view class="btns" wx:if="{{!showDatePicker}}">
+      <view class="cancel" bindtap="cancel">取消</view>
+      <view class="save" bindtap="save">保存</view>
+    </view>
+  </view>
+</view>

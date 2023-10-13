@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-picker": "@vant/weapp/picker/index"
+  },
+  "navigationBarTitleText": "预约量尺寸"
+}

@@ -1,0 +1,29 @@
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #F3F6F9;
+  padding: 8vw 5vw;
+  padding-bottom: 30vw;
+}
+.box{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #F3F6F9;
+  width: 100vw;
+  height: 30vw;
+  /* background-color: #000; */
+}
+.createWorkOrder {
+  position: fixed;
+  left: 17vw;
+  bottom: 10vw;
+  width: 66vw;
+  height: 15vw;
+  line-height: 15vw;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background-color: #2897FD;
+  border-radius: 12px;
+}

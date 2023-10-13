@@ -1,0 +1,101 @@
+<!--pages/warrantyInfo/warrantyInfo.wxml-->
+<view class="line">
+  <view class="infoItem">
+    <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">主材名称</view>
+    </view>
+    <view class="textBox short">
+      <view class="infoShow">{{materialName}}</view>
+    </view>
+  </view>
+  <view class="infoItem">
+    <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">主材品牌</view>
+    </view>
+    <view class="textBox short">
+      <view class="infoShow">{{materialBrand}}</view>
+    </view>
+  </view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">主材价格</view>
+    </view>
+    <view class="textBox med">
+      <view class="infoShow">{{materialPrice}}</view>
+    </view>
+    <view class="unit">元</view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">保质期</view>
+    </view>
+    <view class="textBox med">
+      <view class="infoShow">{{shelfLife}}</view>
+    </view>
+    <view class="unit">天</view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">质保开始时间</view>
+    </view>
+    <view class="textBox large">
+      <view class="infoShow">{{warrentyStartTime}}</view>
+    </view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">供货商</view>
+    </view>
+    <view class="textBox large">
+      <view class="infoShow">{{supplier}}</view>
+    </view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">联系人</view>
+    </view>
+    <view class="textBox large">
+      <view class="infoShow">{{contact}}</view>
+    </view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">联系方式</view>
+    </view>
+    <view class="textBox large">
+      <view class="infoShow">{{contactNum}}</view>
+    </view>
+</view>
+<view class="line">
+  <view class="introBar">
+    <image class="blueRect" src="/images/BlueRectangle.png"></image>
+    <view class="introBarText">文件资料</view>
+  </view>
+  <view class="getFileBlock" bindtap="previewPict" wx:if="{{fileIsNotEmpty!=0}}">
+    <image src="/images/File.png" class="fileImage"></image>
+    <view class="fileText">质保表</view>
+  </view>
+  <view wx:if="{{fileIsNotEmpty==0}}" class="emptyDisplay">
+    <image src="/images/Empty.png" class="emptyImage"></image>
+    <view class="emptyText">暂无文件</view>
+  </view>
+</view>
+<view class="line">
+  <view class="introBar">
+      <image class="blueRect" src="/images/BlueRectangle.png"></image>
+      <view class="introBarText">剩余质保时间</view>
+    </view>
+    <view class="textBox med">
+      <view class="infoShow">{{lastTime}}</view>
+    </view>
+    <view class="unit">天</view>
+</view>

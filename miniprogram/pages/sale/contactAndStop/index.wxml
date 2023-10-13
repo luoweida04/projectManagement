@@ -1,0 +1,32 @@
+<!--pages/sale/contactAndStop/index.wxml-->
+<view class="page">
+  <view wx:if="{{title=='stop'}}">
+    <view class="detailBox">
+      <view class="header">工单号</view>
+      <view class="title">终止原因</view>
+      <textarea value="" placeholder="请输入终止原因..." bindinput="inputReason"/>
+    </view>
+    <view class="btns">
+      <view class="cancel" bindtap="stopCancel">取消</view>
+      <view class="save" bindtap="stopSave">保存</view>
+    </view>
+  </view>
+  <view wx:if="{{title=='contact'}}">
+    <view class="detailBox">
+      <view class="header">记录{{proj.contacts.length+1}}</view>
+      <view class="title">沟通内容</view>
+      <textarea value="{{contact}}" placeholder="请输入沟通内容..." bindinput="inputContact"/>
+      <view class="contactSave" bindtap="contactSave">保存</view>
+    </view>
+    <view class="detailBox" wx:for="{{proj.contacts}}" wx:key="index" bindtap="showContent" data-index="{{index}}">
+      <view class="header">
+        记录{{proj.contacts.length - index}}
+        <view class="time">修改时间 {{item._updateTime}}</view>
+      </view>
+      <view class="content" wx:if="{{contentIndex==index}}">
+        <view class="title">沟通内容</view>
+        <view class="record">{{item.text}}</view>
+      </view>
+    </view>
+  </view>
+</view>

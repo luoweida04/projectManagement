@@ -1,0 +1,30 @@
+/* pages/identitySelect/identitySelect.wxss */
+.bg {
+  padding: 120rpx 76rpx;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 246rpx;
+  background: #F3F6F9;
+  height: 100vh;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36rpx;
+  max-height: 210rpx;
+}
+
+.itemImg {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 36rpx;
+}
+
+.itemText{
+  font-size: 28rpx;
+  font-family: 'alipu';
+  height: 50rpx;
+  line-height: 50rpx;
+}

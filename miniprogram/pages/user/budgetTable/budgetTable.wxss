@@ -1,0 +1,2 @@
+/* pages/user/budgetTable/budgetTabel.wxss */
+@import "/pages/constructionSite/constructionSite.wxss"

@@ -1,0 +1,153 @@
+/* pages/manager/index.wxss */
+.page {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #F3F6F9;
+  padding-top: 5vw;
+  /* padding-left: 5vw; */
+}
+.boxs {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 83vw;
+  margin-left: 9vw !important;
+}
+.box {
+  box-sizing: border-box;
+  width: 22vw;
+  margin-bottom: 8vw;
+}
+.box image {
+  width: 22vw;
+}
+.box .name {
+  text-align: center;
+}
+.isedit {
+  margin-left: 5vw;
+}
+.selTime {
+  display: flex;
+}
+.selTime .selTime1 {
+  width: 35vw;
+  color: #C5C5C5;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 2vw 3vw;
+}
+.selTime .middle {
+  margin: 2vw;
+}
+.selectWorker {
+  color: #C5C5C5;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 2vw 3vw;
+}
+.label {
+  display: flex;
+  margin-bottom: 2vw;
+  margin-top: 3vw;
+}
+.icon {
+  width: 6px;
+  height: 20px;
+  background-color: #2897FD;
+  margin-right: 10px;
+}
+.label .right {
+  width: 15vw;
+  height: 6vw;
+  line-height: 5.5vw;
+  text-align: center;
+  border: 1px solid #2897FD;
+  border-radius: 5px;
+  color: #2897FD;
+  margin-right: 4vw;
+}
+.projects {
+  width: 90vw;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.projects .project {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #848484;
+  padding: 4vw;
+  border-bottom: 1px solid #F3F6F9;
+}
+.projects .project .right {
+  width: 6vw;
+  height: 6vw;
+  background-color: #F3F6F9;
+  border-radius: 6px;
+}
+.projects .project .right image {
+  width: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+  z-index: 100;
+}
+.overlay .bottom {
+  position: absolute;
+  width: 100vw;
+  height: 30vw;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+}
+.datePicker {
+  position: absolute;
+  bottom: 30vw;
+  width: 100vw;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.vanPicker {
+  position: absolute;
+  bottom: 30vw;
+  width: 100vw;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  overflow: hidden;
+}
+.btns {
+  position: fixed;
+  left: 10vw;
+  bottom: 10vw;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  z-index: 100;
+}
+.btns .cancel {
+  width: 25vw;
+  height: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  background-color: #CACACA;
+  border-radius: 12px;
+}
+.btns .affirm {
+  width: 50vw;
+  height: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  background-color: #2897FD;
+  border-radius: 12px;
+}

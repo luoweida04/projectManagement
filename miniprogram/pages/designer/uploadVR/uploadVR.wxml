@@ -1,0 +1,11 @@
+<!--pages/uploadVR/uploadVR.wxml-->
+<view class="body">
+  <view class="blueBox" wx:for="{{uploadInfs}}">
+    <view class="titleBox">
+      <image class="blueBlock" src="../../../images/BlueRectangle.png"></image>
+      <text class="titleText">{{item.title}}</text>
+    </view>
+    <input class="textInput" type="text" placeholder="{{item.placeholder}}" value="{{item.value}}" bindinput="handleInput" data-index="{{index}}"/>
+  </view>
+  <button class="uploadBtn" bindtap="uploadVR">上传</button>
+</view>

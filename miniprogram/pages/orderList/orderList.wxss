@@ -1,0 +1,72 @@
+/* pages/orderList/orderList.wxss */
+.bg {
+  padding: 56rpx 46rpx;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #F3F6F9;
+  overflow: scroll;
+}
+
+.item {
+  height: 440rpx;
+  width: 660rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  margin-bottom: 14rpx;
+}
+
+.headerBox {
+  background: #2897FD;
+  display: flex;
+  width: 660rpx;
+  height: 80rpx;
+  align-items: center;
+}
+
+.headerText {
+  margin-left: 54rpx;
+  color: white;
+}
+
+.operateBtn {
+  margin-left: auto;
+  margin-right: 26rpx;
+  padding: 0 30rpx;
+  /* width: 112rpx; */
+  height: 52rpx;
+  background: #64BEFF;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  color: white;
+  font-family: 'alipu';
+  line-height: 52rpx;
+  border-style: none;
+}
+.contentBox{
+  box-sizing: border-box;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 360rpx;
+  padding: 0 20rpx;
+  padding-bottom: 8rpx;
+}
+
+.contentItem {
+  box-sizing: border-box;
+  font-size: 28rpx;
+  font-family: 'alipu';
+  line-height: 68rpx;
+  height: 68rpx;
+  font-weight: normal;
+  border-top: 2rpx solid #F3F6F9;
+  padding: 0 34rpx;
+  display: flex;
+}
+
+.contentValue {
+  margin-left: auto;
+  margin-right: 0;
+  color: #848484;
+}

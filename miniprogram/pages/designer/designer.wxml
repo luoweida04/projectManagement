@@ -1,0 +1,99 @@
+<!--pages/designer/designer.wxml-->
+<view class="body">
+<!-- 平面图 -->
+  <view class="blueBox">
+    <view class="titleBox">
+      <image class="blueBlock" src="../../images/BlueRectangle.png"></image>
+      <text class="titleText">平面图</text>
+      <view class="uploadBtn" bindtap="goToUpload" data-type="surface" data-url="./uploadFile/uploadFile">上传</view>
+    </view>
+    <view wx:if="{{surface.length == 0}}" class="fileBox">
+      <image class="emptyImg" src="../../images/Empty.png" />
+      <text class="emptyText">暂无文件 点击上传</text>
+    </view>
+    <view wx:else>
+      <view class="itemBox" wx:for="{{surface}}" bindtap="downloadItem" data-type="surface" data-index="{{index}}">
+        <image class="fileImg" src="{{'../../images/File.png'}}"></image>
+        <text class="fileText">{{item.fileName}}</text>
+        <image class="deleteBtn" src="../../images/Delete.png" catchtap="deleteFile" data-delArr="surface" data-delIdx="{{index}}"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 效果图 -->
+  <view class="blueBox">
+    <view class="titleBox">
+      <image class="blueBlock" src="../../images/BlueRectangle.png"></image>
+      <text class="titleText">效果图</text>
+      <view class="uploadBtn" bindtap="goToUpload" data-type="effect" data-url="./designerFile/designerFile">上传</view>
+    </view>
+    <view wx:if="{{effect.length == 0 && effectvr.length==0}}" class="fileBox">
+      <image class="emptyImg" src="../../images/Empty.png" />
+      <text class="emptyText">暂无文件 点击上传</text>
+    </view>
+    <view wx:else>
+      <view class="itemBox" wx:for="{{effect}}" bindtap="downloadItem" data-type="effect" data-index="{{index}}">
+        <image class="fileImg" src="{{'../../images/File.png'}}"></image>
+        <text class="fileText">{{item.fileName}}</text>
+        <image class="deleteBtn" src="../../images/Delete.png" catchtap="deleteFile" data-delArr="effect" data-delIdx="{{index}}"></image>
+      </view>
+      <view class="itemBox" wx:for="{{effectvr}}" bindtap="downloadItem" data-type="effectvr" data-index="{{index}}">
+        <image class="fileImg" src="{{'../../images/Panorama.png'}}"></image>
+        <text class="fileText">{{item.fileName}}</text>
+        <image class="deleteBtn" src="../../images/Delete.png" catchtap="deleteFile" data-delArr="effectvr" data-delIdx="{{index}}"></image>
+      </view>
+
+    </view>
+  </view>
+
+
+<!-- 施工图 -->
+  <view class="blueBox">
+    <view class="titleBox">
+      <image class="blueBlock" src="../../images/BlueRectangle.png"></image>
+      <text class="titleText">施工图</text>
+      <view class="uploadBtn" bindtap="goToUpload" data-type="construct" data-url="./uploadFile/uploadFile">上传</view>
+    </view>
+    <view wx:if="{{construct.length == 0}}" class="fileBox">
+      <image class="emptyImg" src="../../images/Empty.png" />
+      <text class="emptyText">暂无文件 点击上传</text>
+    </view>
+    <view wx:else>
+      <view class="itemBox" wx:for="{{construct}}" bindtap="downloadItem" data-type="construct" data-index="{{index}}">
+        <image class="fileImg" src="{{'../../images/File.png'}}"></image>
+        <text class="fileText">{{item.fileName}}</text>
+        <image class="deleteBtn" src="../../images/Delete.png" catchtap="deleteFile" data-delArr="construct" data-delIdx="{{index}}"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- VR全景 -->
+  <view class="blueBox">
+    <view class="titleBox">
+      <image class="blueBlock" src="../../images/BlueRectangle.png"></image>
+      <text class="titleText">VR全景</text>
+      <view class="uploadBtn" bindtap="goToUpload" data-type="vr" data-url="./uploadVR/uploadVR">上传</view>
+    </view>
+    <view wx:if="{{vr.length == 0}}" class="fileBox">
+      <image class="emptyImg" src="../../images/Empty.png" />
+      <text class="emptyText">暂无文件 点击上传</text>
+    </view>
+    <view wx:else>
+      <view class="itemBox" wx:for="{{vr}}" bindtap="downloadItem" data-type="vr" data-index="{{index}}">
+        <image class="fileImg" src="{{'../../images/Panorama.png'}}"></image>
+        <text class="fileText">{{item.fileName}}</text>
+        <image class="deleteBtn" src="../../images/Delete.png" catchtap="deleteFile" data-delArr="vr" data-delIdx="{{index}}"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<van-popup show="{{ deleteCheck }}" bind:close="onClose" custom-style="border-radius: 15px;">
+<view class="deleteWindow">
+  <image class="warningIcon" src="../../images/Caution.png"/>
+  <text class="warningText">请问您是否确认删除文件?</text>
+  <view class="btnBox">
+  <view class="windowBtn cancelBtn" bindtap="onClose">取消</view>
+  <view class="windowBtn confirmBtn" bindtap="deleteConfirm">确认</view>
+  </view>
+</view>
+</van-popup>

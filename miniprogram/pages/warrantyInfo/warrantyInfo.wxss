@@ -1,0 +1,98 @@
+/* pages/warrantyInfo/warrantyInfo.wxss */
+@import "/pages/user/selectPanel/selectPanel.wxss";
+
+.emptyDisplay{
+  width: 660rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+  margin-bottom: 46rpx;
+}
+
+.emptyImage{
+  width: 242rpx;
+  height: 176rpx;
+}
+
+.emptyText{
+  color: #828282;
+  font-size: small;
+}
+
+.fileImage{
+  position: relative;
+  left: 22rpx;
+  width: 94rpx;
+  height: 92rpx;
+  border-radius: 20rpx;
+}
+
+.fileText{
+  position: relative;
+  left: 54rpx;
+}
+
+.getFileBlock{
+  display: flex;
+  align-items: center;
+  width: 660rpx;
+  height: 136rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+
+.infoItem{
+  width: 294rpx;
+}
+
+.infoShow{
+  height: 48rpx;
+  position: relative;
+  top: 8rpx;
+  left: 24rpx;
+  color: #848484;
+  
+}
+
+.introBar{
+  left: 0rpx;
+  top:0rpx;
+}
+
+.large{
+  width: 660rpx;
+}
+
+.line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 660rpx;
+  position: relative;
+  left: 48rpx;
+  margin-top: 14rpx;
+}
+
+.med{
+  width: 590rpx;
+}
+
+.short{
+  width: 294rpx;
+}
+
+.textBox{
+  position: relative;
+  height: 64rpx;
+  border-radius: 12rpx;
+  background-color: white;
+  margin-top: 6rpx;
+}
+
+.unit{
+  position: relative;
+  top: 12rpx;
+}

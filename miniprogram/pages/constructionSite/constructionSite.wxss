@@ -1,0 +1,32 @@
+/* pages/constructionSite/constructionSite.wxss */
+@import "/pages/user/selectPanel/selectPanel.wxss";
+
+.fileImage{
+  position: relative;
+  left: 22rpx;
+  width: 92rpx;
+  height: 92rpx;
+}
+
+.fileText{
+  position: relative;
+  left: 54rpx;
+  width: 264rpx;
+  height: 48rpx;
+}
+
+.getFileBar{
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 48rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  width: 660rpx;
+  height: 136rpx;
+  margin-top: 18rpx;
+}
+
+#firstLine{
+  margin-top: 32rpx;
+}

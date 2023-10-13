@@ -1,0 +1,86 @@
+/* components/workOrder/index.wxss */
+.detailBox {
+  width: 90vw;
+  border-radius: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 12vw;
+  line-height: 12vw;
+  padding-left: 35px;
+  color: #fff;
+  background-color: #2897FD;
+}
+.header .right {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-right: 12px;
+}
+.header .btn {
+  width: 90px;
+  height: 7vw;
+  line-height: 7.5vw;
+  text-align: center;
+  border-radius: 8px;
+  color: #fff;
+  /* background-color:#64BEFF; */
+  background-color:#64BEFF;
+  border: none;
+  margin: auto;
+}
+.completeBtn {
+  border: 1px solid #fff !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.detailBox .row {
+  box-sizing: border-box;
+  display: flex;
+  width: 85%;
+  height: 50px;
+  line-height: 50px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(228, 227, 227);
+  padding:auto 10px;
+  margin:auto;
+}
+.detailBox .row .content {
+  color: #848484;
+}
+.vandialog {
+  width: 85vw;
+  /* height: 60vw; */
+  padding-bottom: 3vw;
+}
+.vandialog image{
+  width: 20vw;
+  margin: 8vw 32.5vw 2vw;
+}
+.vandialog .message {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 8vw;
+}
+.btns {
+  display: flex;
+  justify-content: space-around;
+  width: 85vw;
+  margin: 1vw auto 3vw;
+}
+.btns .btn {
+  color: #2897FD;
+  border-radius: 10px;
+  border: 1px solid #2897FD;
+  background-color: #fff;
+  padding:4px 12px;
+}
+.grey {
+  border: 1px solid #C6C6C6 !important;
+  color: #C6C6C6 !important;
+}

@@ -1,0 +1,28 @@
+/* pages/worker/index.wxss */
+.page {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #F3F6F9;
+  padding-top: 5vw;
+}
+.boxs {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  width: 92vw;
+  margin-left: 9vw !important;
+}
+.box {
+  box-sizing: border-box;
+  width: 22vw;
+  margin-bottom: 8vw;
+  margin-right: 8vw;
+}
+.box image {
+  width: 22vw;
+}
+.box .name {
+  text-align: center;
+}

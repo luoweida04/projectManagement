@@ -1,0 +1,19 @@
+/* pages/intro/intro.wxss */
+.bgImage{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  display: flex;
+}
+
+.introBox{
+  width: 660rpx;
+  height: 1260rpx;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+  margin-left: 50%;
+  margin-top: 62rpx;
+  transform: translateX(-50%);
+}

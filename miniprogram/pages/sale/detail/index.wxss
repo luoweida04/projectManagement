@@ -1,0 +1,79 @@
+/* pages/sale/preMeasure/index.wxss */
+.page {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  padding:10vw 8vw;
+  background-color: #F3F6F9;
+}
+.label {
+  display: flex;
+}
+.icon {
+  width: 6px;
+  height: 20px;
+  background-color: #2897FD;
+  margin-right: 10px;
+}
+.select {
+  box-sizing: border-box;
+  width: 84vw;
+  height: 10vw;
+  line-height: 10vw;
+  color: #C5C5C5;
+  background-color: #fff;
+  border-radius: 6px;
+  padding-left: 20px;
+  margin: 15px 0;
+}
+.btns {
+  position: fixed;
+  left: 10vw;
+  bottom: 10vw;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  z-index: 100;
+}
+.btns .cancel {
+  width: 25vw;
+  height: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  background-color: #CACACA;
+  border-radius: 12px;
+}
+.btns .affirm {
+  width: 50vw;
+  height: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  background-color: #2897FD;
+  border-radius: 12px;
+}
+.overlay {
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.3);
+}
+.overlay .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 30vw;
+  background-color: #fff;
+}
+.overlay .vanPicker {
+  position: absolute;
+  width: 100vw;
+  bottom: 25vw;
+  border-radius: 15px;
+  overflow: hidden;
+}

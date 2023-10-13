@@ -1,0 +1,7 @@
+<!--pages/identitySelect/identitySelect.wxml-->
+<view class="bg">
+  <view class="item" wx:for="{{icons}}" bindtap="goToNextPage" data-url="{{item.navUrl}}" data-identity="{{item.text}}">
+    <image class="itemImg" src="{{item.src}}" />
+    <text class="itemText">{{item.text}}</text>
+  </view>
+</view>

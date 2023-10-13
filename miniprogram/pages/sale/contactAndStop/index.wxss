@@ -1,0 +1,89 @@
+/* pages/sale/contactAndStop/index.wxss */
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #F3F6F9;
+  padding-left: 5vw;
+  padding-top: 3vw;
+  padding-bottom: 10vw;
+}
+.detailBox {
+  width: 90vw;
+  border-radius: 12px;
+  background-color: #fff;
+  margin-top: 5vw;
+  overflow: hidden;
+}
+.header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 12vw;
+  line-height: 12vw;
+  padding-left: 35px;
+  color: #fff;
+  background-color: #2897FD;
+}
+.header .time {
+  margin-right: 5vw;
+}
+.title {
+  font-size: 18px;
+  margin-top: 3vw;
+  margin-left: 8vw;
+}
+textarea {
+  box-sizing: border-box;
+  width: 90%;
+  height: 50vw;
+  background-color: #F3F6F9;
+  border-radius: 10px;
+  margin: 3vw 5% 5vw;
+  padding: 15px;
+}
+.detailBox .contactSave{
+  width: 36vw;
+  height: 8vw;
+  line-height: 8vw;
+  text-align: center;
+  color: #2897FD;
+  border-radius: 8px;
+  border: 1px solid #2897FD;
+  margin: 3vw auto;
+}
+.detailBox .record {
+  box-sizing: border-box;
+  width: 90%;
+  background-color: #F3F6F9;
+  border-radius: 10px;
+  margin: 3vw 5% 5vw;
+  padding: 15px;
+}
+.btns {
+  position: fixed;
+  left: 10vw;
+  bottom: 10vw;
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  z-index: 100;
+}
+.btns .cancel {
+  width: 25vw;
+  height: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  background-color: #CACACA;
+  border-radius: 12px;
+}
+.btns .save {
+  width: 50vw;
+  height: 15vw;
+  line-height: 15vw;
+  text-align: center;
+  background-color: #2897FD;
+  border-radius: 12px;
+}

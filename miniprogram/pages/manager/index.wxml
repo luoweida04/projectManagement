@@ -1,0 +1,54 @@
+<!--pages/manager/index.wxml-->
+<view class="page">
+  <view class="boxs" wx:if="{{!edit}}">
+    <view class="box" wx:for="{{boxs}}" wx:key="index" bindtap="goEdit" data-i="{{index}}">
+      <image src="{{item.url}}" mode="widthFix" />
+      <view class="name">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="isedit" wx:if="{{edit}}">
+    <view class="editPage">
+      <view class="label">
+        <view class="icon"></view>
+        <view>工期</view>
+      </view>
+      <view class="selTime">
+        <view class="selTime1" bindtap="selStartTime">{{startTime==""?"请点击选择开始时间":startTime}}</view>
+        <view class="middle">到</view>
+        <view class="selTime1" bindtap="selEndTime">{{endTime==""?"请点击选择结束时间":endTime}}</view>
+      </view>
+      <view class="label">
+        <view class="icon"></view>
+        <view>施工人员</view>
+      </view>
+      <view class="selectWorker" bindtap="selectWorker">{{workerName==""?"请点击选择施工人员的名字":workerName}}</view>
+      <view class="label" style="justify-content: space-between;">
+        <view class="left" style="display: flex;">
+          <view class="icon"></view>
+          <view>质检项目</view>
+        </view>
+        <!-- <view class="right" bindtap="addProject">添加</view> -->
+      </view>
+    </view>
+    <view class="projects">
+      <view class="project" wx:for="{{projectsNow}}" wx:key="index">
+        <view class="left">{{item.name}}</view>
+        <view class="right" catchtap="doneBtn" data-i="{{index}}">
+          <image src="/images/Check.png" mode="widthFix" wx:if="{{item.done==true}}"/>
+        </view>
+      </view>
+    </view>
+    <view class="overlay" wx:if="{{showDatePicker!=0}}">
+      <van-datetime-picker class="datePicker" type="date" bind:input="onInputDatePicker" bind:confirm="comfirmDate" bind:cancel="cancelDate" min-date="{{showDatePicker == 1 ? 0 : minDate}}"/>
+      <view class="bottom"></view>
+    </view>
+    <view class="overlay" wx:if="{{showPicker!=0}}" bindtap="overlayTap">
+      <van-picker class="vanPicker" catchtap="catchTap" columns="{{ showPicker==1? workers : projects}}" bind:change="onChangePicker" />
+      <view class="bottom"></view>
+    </view>
+    <view class="btns" wx:if="{{showDatePicker==0}}">
+      <view class="cancel" bindtap="cancel">取消</view>
+      <view class="affirm" bindtap="affirm">确认</view>
+    </view>
+  </view>
+</view>

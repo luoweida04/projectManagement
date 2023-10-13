@@ -1,0 +1,17 @@
+<!--pages/designer/uploadFile/uploadFile.wxml-->
+<view class="page">
+  <view class="label">
+    <view class="icon"></view>
+    <view>文件命名</view>
+  </view>
+  <input type="text" placeholder="请输入文件名称" value="{{formData.name}}" bindinput="inputName" placeholder-style="color: #C5C5C5;"/>
+  <view class="label">
+    <view class="icon"></view>
+    <view>选择文件</view>
+  </view>
+  <view class="choose" bindtap="chooseFile">
+    <image src="{{img==0?'/images/Add.png':'/images/Check-one.png'}}" mode="widthFix"/>
+    <!-- <image src="/images/Check-one.png" mode="widthFix"/> -->
+  </view>
+  <view class="upload" bindtap="upload">上传</view>
+</view>

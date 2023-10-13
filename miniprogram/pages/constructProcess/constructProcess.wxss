@@ -1,0 +1,34 @@
+/* pages/constructProcess/constructProcess.wxss */
+@import "/pages/user/selectPanel/selectPanel.wxss";
+
+.buttonAndText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48rpx;
+  margin-right: 72rpx;
+}
+
+.buttonImage{
+  height: 160rpx;
+  width: 160rpx;
+}
+
+.outer{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 750rpx;
+  top:40rpx;
+  position: relative;
+  left: 55rpx;
+}
+
+.textUnderImage{
+  width: 168rpx;
+  height: 50rpx;
+  text-align: center;
+  font-weight: 55 Regular;
+  font-size: 28rpx;
+}
